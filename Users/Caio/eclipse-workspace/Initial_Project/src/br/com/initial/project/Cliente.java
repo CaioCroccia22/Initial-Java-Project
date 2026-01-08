@@ -10,7 +10,7 @@ public class Cliente {
 		return codigo;
 	}
 	
-	public void setCodigo() {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 	
@@ -18,7 +18,7 @@ public class Cliente {
 		return nome;
 	}
 	
-	public void setNome() {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	
@@ -26,9 +26,12 @@ public class Cliente {
 		return endereco;
 	}
 	
-	public void setEndereco() {
+	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 	
+	public void cadastrarEndereco(String endereco) {
+		setEndereco(endereco);
+	}
 	
 }
